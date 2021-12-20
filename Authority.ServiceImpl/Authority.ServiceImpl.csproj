@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="2.2.50" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Authority.Domain\Authority.Domain.csproj" />
+    <ProjectReference Include="..\Authority.Service\Authority.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="redis.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

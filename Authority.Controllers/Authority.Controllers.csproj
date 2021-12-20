@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Authority.Domain\Authority.Domain.csproj" />
+    <ProjectReference Include="..\Authority.Service\Authority.Service.csproj" />
+    <ProjectReference Include="..\DotNetty_ControllerBus\DotNetty_ControllerBus.csproj" />
+  </ItemGroup>
+
+</Project>

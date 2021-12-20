@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetty.Transport" Version="0.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Authority.Controllers\Authority.Controllers.csproj" />
+    <ProjectReference Include="..\Authority.DependencyInjection\Authority.DependencyInjection.csproj" />
+    <ProjectReference Include="..\DotNetty_Common\DotNetty_Common.csproj" />
+    <ProjectReference Include="..\DotNetty_ControllerBus\DotNetty_ControllerBus.csproj" />
+    <ProjectReference Include="..\DotNetty_Server_Core\DotNetty_Server_Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MIMEConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

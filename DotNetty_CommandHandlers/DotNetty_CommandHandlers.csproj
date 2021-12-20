@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetty.Codecs.Http" Version="0.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetty_CommandBus\DotNetty_CommandBus.csproj" />
+    <ProjectReference Include="..\DotNetty_Commands\DotNetty_Commands.csproj" />
+  </ItemGroup>
+
+</Project>
